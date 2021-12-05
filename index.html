@@ -162,7 +162,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/11/17/%E5%A4%8D%E6%B4%BB%E4%B8%80%E4%B8%8B/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/11/17/Hexo%E6%8C%87%E4%BB%A4%E9%9B%86%E2%80%94%E2%80%94%E5%A4%8D%E6%B4%BB%E4%B8%80%E4%B8%8B=_=/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -176,7 +176,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/11/17/%E5%A4%8D%E6%B4%BB%E4%B8%80%E4%B8%8B/" class="post-title-link" itemprop="url">复活一下=_=</a>
+            <a href="/2021/11/17/Hexo%E6%8C%87%E4%BB%A4%E9%9B%86%E2%80%94%E2%80%94%E5%A4%8D%E6%B4%BB%E4%B8%80%E4%B8%8B=_=/" class="post-title-link" itemprop="url">Hexo指令集——复活一下=_=</a>
         </h2>
 
         <div class="post-meta">
@@ -185,13 +185,19 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2021-11-17 09:25:33 / 修改时间：09:26:27" itemprop="dateCreated datePublished" datetime="2021-11-17T09:25:33+08:00">2021-11-17</time>
+              <time title="创建时间：2021-11-17 09:25:33" itemprop="dateCreated datePublished" datetime="2021-11-17T09:25:33+08:00">2021-11-17</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-12-05 15:06:49" itemprop="dateModified" datetime="2021-12-05T15:06:49+08:00">2021-12-05</time>
+              </span>
 
           
-            <span id="/2021/11/17/%E5%A4%8D%E6%B4%BB%E4%B8%80%E4%B8%8B/" class="post-meta-item leancloud_visitors" data-flag-title="复活一下=_=" title="阅读次数">
+            <span id="/2021/11/17/Hexo%E6%8C%87%E4%BB%A4%E9%9B%86%E2%80%94%E2%80%94%E5%A4%8D%E6%B4%BB%E4%B8%80%E4%B8%8B=_=/" class="post-meta-item leancloud_visitors" data-flag-title="Hexo指令集——复活一下=_=" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -209,6 +215,16 @@
 
       
           <p>复活一下=_=又摆大烂了，更新点什么…</p>
+<h1 id="Hexo指令集"><a href="#Hexo指令集" class="headerlink" title="Hexo指令集"></a>Hexo指令集</h1><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><ol>
+<li><code>$ npm install hexo -g</code> #安装hexo</li>
+<li><code>$ npm update hexo -g</code> #升级hexo </li>
+<li><code>$ npm init</code> #初始化   <h2 id="在Blog文件夹右键git-bash-here"><a href="#在Blog文件夹右键git-bash-here" class="headerlink" title="在Blog文件夹右键git bash here:"></a>在Blog文件夹右键git bash here:</h2></li>
+<li><code>$ hexo clean</code> #清除缓存文件 (db.json) 和已生成的静态文件 (public) 。在某些情况（尤其是更换主题后），如果发现您对站点的更改无论如何也不生效，您可能需要运行该命令。</li>
+<li><code>$ hexo n &quot;博客TEST&quot;</code> #新建文章”博客TEST”(基本没用)</li>
+<li><code>$ hexo g</code> #部署之前预先生成静态文件</li>
+<li><code>$ hexo s</code> #本地服务器—默认地址： <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a></li>
+<li><code>$ hexo d</code> #部署网站<h2 id="在Blog-source-posts添加好文章后如何推送？"><a href="#在Blog-source-posts添加好文章后如何推送？" class="headerlink" title="在Blog\source\posts添加好文章后如何推送？"></a>在Blog\source\posts添加好文章后如何推送？</h2><code>$ hexo clean</code>+<code>$ hexo g</code>+<code>$ hexo s</code>本地服务器查看无异常后按Ctrl+c停止服务器，输入<code>$ hexo d</code>推送部署即可。</li>
+</ol>
 
       
     </div>
@@ -672,7 +688,7 @@
 <ul>
 <li>去根目录，打开_config.yml</li>
 <li>拉到底部，找到repository  <blockquote>
-<p>  type: git  <strong>repository:<a href="mailto:&#103;&#x69;&#116;&#64;&#103;&#x69;&#x74;&#x68;&#x75;&#x62;&#46;&#99;&#x6f;&#x6d;">&#103;&#x69;&#116;&#64;&#103;&#x69;&#x74;&#x68;&#x75;&#x62;&#46;&#99;&#x6f;&#x6d;</a>:08shooter/08shooter.github.io.git</strong> #你的仓库地址<br>branch: main</p>
+<p>  type: git  <strong>repository:<a href="mailto:&#103;&#x69;&#x74;&#64;&#103;&#105;&#x74;&#104;&#x75;&#x62;&#x2e;&#x63;&#111;&#109;">&#103;&#x69;&#x74;&#64;&#103;&#105;&#x74;&#104;&#x75;&#x62;&#x2e;&#x63;&#111;&#109;</a>:08shooter/08shooter.github.io.git</strong> #你的仓库地址<br>branch: main</p>
 </blockquote>
 </li>
 <li>去github博客仓库Clone时选择SSH，复制替换到这里就好了。</li>
